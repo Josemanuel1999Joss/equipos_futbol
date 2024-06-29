@@ -18,14 +18,14 @@ export class ListarEquiposComponent implements OnInit{
        
    }
  
-   //metodo para ontener los empelados
+   //metodo para ontener los equipos
    getEquipos(){
      this.equipoService.getEquipos()
      .subscribe((data)=>{
        this.equipos=data;
      })
    }
-   //metodo para eliminar al empleado
+   //metodo para eliminar al equipo
    eliminarEquipo(equipo,index){
      if(window.confirm('¿Estas seguro que lo deseas eliminar?')){
        this.equipoService.deleteEquipo(equipo._id)
