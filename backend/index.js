@@ -31,7 +31,7 @@ app.use('/api', equipoRouter);
 // Configuración del puerto del servidor
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
-    console.log('Escuchando en el puerto ' + port);
+    console.log('Escuchando en el puerto1 ' + port);
 });
 
 // Manejo de errores 404 - debe estar después de las rutas de la API
